@@ -5,7 +5,7 @@ let server = http.createServer() //Cree server comme istance de http
 
 server.on('request', (request, reponce) =>{  //Notre fontion
 
-    fs.readFile('indexd.html', (err, data) =>{ // "err => prend en paramettre erro" "data =>prend en paramettre la page a lir"
+    fs.readFile('index.html', (err, data) =>{ // "err => prend en paramettre erro" "data =>prend en paramettre la page a lir"
         if (err) throw err
         
     reponce.writeHead(200, {
